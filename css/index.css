@@ -1,30 +1,116 @@
 #HOME{
-    background-image: url(\\images/home_background_img.webp);
-    width: 100%;
+    background: url(\\images/home_background_img.webp) center center / cover no-repeat fixed;
 }
 
-.news{
-    position: relative;
-    top: 100px;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.include-accordion ul{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.include-accordion ul li{
+    border-bottom: 1px dotted gray;
+    padding: 10px 0 10px 10px;
+    margin-left:15px;
+}
+ul:nth-of-type(1) li.active li:last-child{
+  border-bottom:1px solid #67a863; 
+}
+
+button{
+  position: sticky;
+  border: none;
+  width: 100%;
+  background-color: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 15px 0 15px 20px;
+  font-size:1em;
+}
+
+button:hover{
+  color: gray;
+}
+
+button::before,
+button::after{
+  content:"";
+  position: absolute;
+  top: 20px;
+  width: 1.5px;
+  height: 8px;
+  background-color: #fff;
+  transition: .5s;
+}
+
+button::before{
+  transform: rotate(-45deg);
+  right: 35px;
+}
+
+button::after{
+  transform: rotate(45deg);
+  right: 30px;
+}
+
+li.active button::before{
+  transform: rotate(-135deg);
+  transition:.5s;
+}
+
+li.active button::after{
+  transform: rotate(135deg);
+  transition:.5s;
+}
+
+/* ul:nth-of-type(2){ background-color: #357D87; }
+ul:nth-of-type(2) ul{ background-color: #519FA5; border-top: 1px solid #5D9FA8; }
+ul:nth-of-type(2) button:hover{ background-color: #1C4B56; }
+ul:nth-of-type(2) li li{ border-bottom: 1px dotted #73BEBF; }
+ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
+
+ul.active{ overflow-y: auto; }
+
+#news{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top: black;
+}
+
+#news header{
+    margin-left: 8%;
+    font-size: 150%;
 }
 
 #news li{
     list-style: none;
+    border-top: solid gray;
 }
 
-#HOME a {
-    text-decoration: none;
-    color: black;
-}
 .sidebar{
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 100px;
     position: sticky;
     top: 0px;
     right: 0px;
 }
 
-.yorushika_icon{
-    width: 200px;
+#hover-link:hover{
+    color: gray;
+}
+
+#yorushika_icon{
+    width: 175px;
 }
