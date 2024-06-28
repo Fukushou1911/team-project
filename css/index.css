@@ -3,10 +3,26 @@
     width: 100%;
 }
 
+.news{
+    position: relative;
+    top: 100px;
+}
+
+#news li{
+    list-style: none;
+}
+
+#HOME a {
+    text-decoration: none;
+    color: black;
+}
 .sidebar{
     font-family: sans-serif;
     font-size: 40px;
     line-height: 100px;
+    position: sticky;
+    top: 0px;
+    right: 0px;
 }
 
 .yorushika_icon{
