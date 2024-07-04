@@ -309,6 +309,23 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
     left: 0px;
 }
 
+.Language a{
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.Language ul{
+    display: flex;
+}
+
+.Language ul li{
+    list-style: none;
+    font-family: sans-serif;
+}
+
 #n-buna {
   width: 250px;
 }
