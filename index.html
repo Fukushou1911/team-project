@@ -4,20 +4,54 @@
     <meta charset="UTF-8">
     <title>ヨルシカ紹介サイト</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="javascript/index.js"></script>
+</head>
   </head>
 
   <body id="HOME">
     <div id="Home-container">
-      <div class="sidebar include-accordion scroll-control">
+      <div class="nav-right visible-xs">
+          <div class="button" id="btn">
+              <div class="bar top"></div>
+              <div class="bar middle"></div>
+              <div class="bar bottom"></div>
+          </div>
+      </div>
+      <main>
+        <nav>
+            <div class="nav-right hidden-xs">
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+            </div>
+        </nav>
+        <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+            <i class="fa fa-user"></i>
+        </a>
+      </main>
+      
+      <div class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="index.html" class="sidebar-anchor">HOME</a></li>
+            <li class="sidebar-item"><a href="About.html" class="sidebar-anchor">ABOUT</a></li>
+            <li class="sidebar-item"><a href="Member.html" class="sidebar-anchor">MEMBER</a></li>
+            <li class="sidebar-item"><a href="Songs.html" class="sidebar-anchor">SONGS</a></li>
+        </ul>
+      </div>
+      <!-- <div class="sidebar include-accordion scroll-control">
         <img src="images/cJrLxlotBmKi35y1718947033_1718947039.png" id="yorushika_icon">
         <button class="accordionBtn" type="button">MENU</button>
         <ul>
-          <li><a href="#HOME" id="hover-link">HOME</a></li><br>
-          <li><a href="#ABOUT" id="hover-link">ABOUT</a></li><br>
-          <li><a href="#MEMBER" id="hover-link">MEMBER</a></li><br>
-          <li><a href="#SONGS" id="hover-link">SONGS</a></li><br>
+          <li><a href="index.html" id="hover-link">HOME</a></li><br>
+          <li><a href="About.html" id="hover-link">ABOUT</a></li><br>
+          <li><a href="Member.html" id="hover-link">MEMBER</a></li><br>
+          <li><a href="Songs.html" id="hover-link">SONGS</a></li><br>
         </ul>
-      </div>
+      </div> -->
+      <img src="images/cJrLxlotBmKi35y1718947033_1718947039.png" id="yorushika_icon">
       <div id="news">
         <header id="news_header">NEWS</header>
           <ul>
