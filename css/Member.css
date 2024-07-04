@@ -5,13 +5,11 @@
 .sidebar {
     width: 30%;
     margin: 10px 0 10px 0;
-    color: black;
-}
-.content {
-    width: 70%;
-    margin: 10px 0 10px 0;
 }
 #n-buna {
+    width: 250px;
+}
+#suis{
     width: 250px;
 }
 #yorushika_icon{
