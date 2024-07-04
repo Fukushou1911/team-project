@@ -330,6 +330,10 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
   width: 250px;
 }
 
+#suis{
+    width: 250px;
+}
+
 #Member-container {
   display: flex;
   flex-direction: row;
