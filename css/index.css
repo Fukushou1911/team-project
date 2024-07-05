@@ -268,7 +268,7 @@ ul:nth-of-type(2) li li{ border-bottom: 1px dotted #73BEBF; }
 ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
 
 .bg-extend-left {
-    padding: 5px;
+    padding: 20px;
     border: 2px solid #333;
     color: #333;
     text-decoration: none;
@@ -295,6 +295,10 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
   
 .bg-extend-left:hover::before {
     left: 0;
+}
+
+.button-text{
+    font-size: 20px;
 }
 
 .loader {
@@ -356,10 +360,11 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
 .Language a{
     text-decoration: none;
     font-family: sans-serif;
+    font-size: 20px;
     color: black;
     position: fixed;
-    bottom: 1%;
-    left: 10%;
+    bottom: 2%;
+    left: 12%;
 }
 
 /* .Language ul{

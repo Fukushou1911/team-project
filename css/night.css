@@ -171,7 +171,7 @@ nav {
 }
 
 .bg-extend-left {
-    padding: 5px;
+    padding: 20px;
     border: 2px solid rgb(165, 165, 165);
     color: rgb(165, 165, 165);
     text-decoration: none;
@@ -198,6 +198,10 @@ nav {
   
 .bg-extend-left:hover::before {
     left: 0;
+}
+
+.button-text{
+    font-size: 20px;
 }
 
 .loader {
@@ -261,10 +265,11 @@ nav {
 .Language a{
     text-decoration: none;
     font-family: sans-serif;
+    font-size: 20px;
     color: rgb(165, 165, 165);
     position: fixed;
-    bottom: 1%;
-    left: 10%;
+    bottom: 2%;
+    left: 12%;
 }
 
 /* .Language ul{
