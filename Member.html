@@ -2,25 +2,111 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>メンバー紹介ページ</title>
-    <link rel="stylesheet" type="text/css" href="c:\Users\iniad\Documents\GitHub\team-project\css\Member.css">
+    <title>メンバー紹介</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="javascript/index.js"></script>
   </head>
 
   <body id="MEMBER">
-    <h1>Member</h1>
-    <div id="container">
-      <div class="sidebar">
-        <header>ヨルシカ</header><img src="images/yorushika_icon.jpg" id="yorushika_icon" name="yorushika_icon">
+    <div id="Member-container">
+      <h1>Member</h1>
+      <div class="nav-right visible-xs">
+        <div class="button" id="btn">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+      </div>
+      <main>
+      <nav>
+          <div class="nav-right hidden-xs">
+              <div class="button" id="btn">
+                  <div class="bar top"></div>
+                  <div class="bar middle"></div>
+                  <div class="bar bottom"></div>
+              </div>
+          </div>
+      </nav>
+      <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
+          <i class="fa fa-user"></i>
+      </a>
+    </main>
+
+    <div class="loader">
+      <div class="looping-rhombuses-spinner">
+        <div class="rhombus"></div>
+        <div class="rhombus"></div>
+        <div class="rhombus"></div>
+      </div>
+      <p class="txt">Now Loading...</p>
+    </div>
+    
+    <div class="sidebar">
+      <ul class="sidebar-list">
+          <li class="sidebar-item"><a href="index.html" class="sidebar-anchor">HOME</a></li>
+          <li class="sidebar-item"><a href="About.html" class="sidebar-anchor">ABOUT</a></li>
+          <li class="sidebar-item"><a href="Member.html" class="sidebar-anchor">MEMBER</a></li>
+          <li class="sidebar-item"><a href="Songs.html" class="sidebar-anchor">SONGS</a></li>
+      </ul>
+    </div>
+      <a href="index.html" class="btn-img"><img src="images/cJrLxlotBmKi35y1718947033_1718947039.png" id="yorushika_icon"></a>
+      <div class="Language">
+        <a href="Member_Eng.html" id="hover-link">English</a><a href="Member.html" id="hover-link">日本語</a>
+      </div>
+      <div class="important">
+        <h1>n-buna [ナブナ]</h1>
+        <img src="images/n-buna.png" id="n-buna" name="n-buna_pic">
         <ul>
-          <li><a href="#HOME">HOME</a></li>
-          <li><a href="#ABOUT">ABOUT</a></li>
-          <li><a href="#MEMBER">MEMBER</a></li>
-          <li><a href="#SONGS">SONGS</a></li>
+          <li>Guitar / Composer：ヨルシカの全ての楽曲の作詞作曲、編曲をしている。ライブではギターを担当</li>
+          <li>元ボカロP：代表作「夜明けと蛍」「ウミユリ海底譚」</li>
+          <li>「春泥棒」などの複数の楽曲でコーラスとして参加。「451」ではボーカルを担当し、自らの楽曲とファンについて自身の声で歌ったことでファンに衝撃を与えた。</li>
+          <li>YouTubuのサブチャンネルにて弾き語り配信を不定期的に行っている。</li>
+          <li><a href="https://www.youtube.com/@n-buna5980">n-bunaYouTubu</a></li>
         </ul>
-     </div>
-     <div class="important">
-        <img src="c:\Users\iniad\Downloads\IMG_7503.jpg" id="n-buna" name="n-buna_pic">
-     </div>
+        <h1>suis [スイ]</h1>
+        <img src="images/suis_icon.jpg" id="suis" name="suis_pic">
+        <ul>
+          <li>Vocal</li>
+          <li>ソロ名義は「suis from ヨルシカ」。Eve「平行線」、Lanndo(ぬゆり)「宇宙の季節」などヨルシカ以外での活動も行っている。</li>
+          <li>サポートメンバー平畑徹也のアルバム「AMNJK」にて、自身初の作詞を担当した「先日はロマンス」が収録。歌唱にも参加している。</li>
+          <li>京セラのオリジナルアニメ「今は将来に入りますか。」に登場する「AIちゃん」のCVを担当。主題歌の「星めぐる詩」のボーカルも担当。</li>
+        </ul>
+        <h1>サポートメンバー</h1>
+        <h2>下鶴光康</h2>
+        <ul>
+          <li>Guitar:様々なアーティストのサポート・ギタリストとして活躍</li>
+          <li><a href="https://www.youtube.com/@simomts/videos">YouTubu</a></li>
+          <li><a href="https://x.com/simomits?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">X</a></li>
+          <li><a href="https://www.instagram.com/simomits/">Instaglam</a></li>
+        </ul>
+        <h2>キタニタツヤ</h2>
+        <ul>
+          <li>Bass:シンガーソングライター・元ボカロP:アニメ呪術廻戦のOPを担当し話題
+          </li>
+          <li>代表曲「悪魔の踊り方」「青のすみか」</li>
+          <li><a href="https://www.youtube.com/@TatsuyaKitani_Official/videos">YouTube</a></li>
+          <li><a href="https://tatsuyakitani.com/">HP</a></li>
+          <li><a href="https://x.com/TatsuyaKitani?s=20">X</a></li>
+          <li><a href="https://www.instagram.com/inunohone/">Instaglam</a></li>
+          <li><a href="https://www.tiktok.com/@inunohone?_t=8nkweDrG3qz&_r=1">tiktok</a></li>
+        </ul>
+        <h2>Masack</h2>
+        <ul>
+          <li>Drums:「MY FIRST STORY」の元メンバー</li>
+          <li><a href="https://x.com/kojimasa">X</a></li>
+          <li><a href="https://www.instagram.com/masackdrum/">Instaglam</a></li>
+        </ul>
+        <h2>平畑徹也</h2>
+        <ul>
+          <li>Piano:多数の有名アーティストのレコーディング・ライブに参加</li>
+          <li>サポート経歴：キタニタツヤ・クリープハイプ・ポルノグラフィティ・LiSA・P丸様・DUSTCELL etc.</li>
+          <li>1stアルバム「AMNJK」には、n-buna・suis・キタニタツヤ・高橋優・peppe(緑黄色社会)などが参加</li>
+          <li><a href="https://www.youtube.com/@8ch_piano">YouTube</a></li>
+          <li><a href="https://x.com/8ch_piano">X</a></li>
+          <li><a href="https://www.instagram.com/8ch_piano/">Instaglam</a></li>
+        </ul>
+      </div>
     </div>
   </body>
 
