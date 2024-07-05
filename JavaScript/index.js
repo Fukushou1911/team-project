@@ -1,57 +1,57 @@
 $(document).ready(function() {
-    function toggleSidebar() {
-      $(".button").toggleClass("active");
-      $(".sidebar").toggleClass("show");
-      $(".sidebar-item").toggleClass("active");
-    }
-    $(".button").on("click tap", function() {
+  function toggleSidebar() {
+    $(".button").toggleClass("active");
+    $(".sidebar").toggleClass("show");
+    $(".sidebar-item").toggleClass("active");
+  }
+  $(".button").on("click tap", function() {
+    toggleSidebar();
+  });
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) {
       toggleSidebar();
-    });
-    $(document).keyup(function(e) {
-      if (e.keyCode === 27) {
-        toggleSidebar();
-      }
-    });
+    }
   });
-  
-  $(function() {
-    // ローダー終了
-    function end_loader() {
-      $('.loader').fadeOut(800);
-    }
-    // ローディング表示
-    function show_load() {
-      $('.loader .looping-rhombuses-spinner').fadeIn(400);
-    }
-    // ローディング非表示
-    function hide_load() {
-      $('.loader .looping-rhombuses-spinner').fadeOut(400);
-    }
-    // テキスト表示
-    function show_txt() {
-      $('.loader .txt').fadeIn(400);
-    }
-  
-    // タイマー処理
-    $(window).on('load', function() {
-      // 処理①: ローディング表示
-      setTimeout(function() {
-        show_load();
-      }, 400);
-      // 処理②: ローディング非表示
-      setTimeout(function() {
-        hide_load();
-      }, 1000);
-      // 処理③: テキスト表示
-      setTimeout(function() {
-        show_txt();
-      }, 2000);
-      // 処理④: ローダー終了
-      setTimeout(function() {
-        end_loader();
-      }, 3000);
-    });
+});
+
+$(function() {
+  // ローダー終了
+  function end_loader() {
+    $('.loader').fadeOut(800);
+  }
+  // ローディング表示
+  function show_load() {
+    $('.loader .looping-rhombuses-spinner').fadeIn(400);
+  }
+  // ローディング非表示
+  function hide_load() {
+    $('.loader .looping-rhombuses-spinner').fadeOut(400);
+  }
+  // テキスト表示
+  function show_txt() {
+    $('.loader .txt').fadeIn(400);
+  }
+
+  // タイマー処理
+  $(window).on('load', function() {
+    // 処理①: ローディング表示
+    setTimeout(function() {
+      show_load();
+    }, 800);
+    // 処理②: ローディング非表示
+    setTimeout(function() {
+      hide_load();
+    }, 1000);
+    // 処理③: テキスト表示
+    setTimeout(function() {
+      show_txt();
+    }, 1500);
+    // 処理④: ローダー終了
+    setTimeout(function() {
+      end_loader();
+    }, 2500);
   });
+});
 
 // $(function(){
 //   function end_loader() {
