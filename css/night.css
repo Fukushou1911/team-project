@@ -1,8 +1,7 @@
-#HOME-Night{
+/* #HOME-Night{
     background: url(/images/night.jpg) center center / cover no-repeat fixed;
 }
 
-/* <sidebar> */
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic');
 body, html {
     height: 100%;
@@ -322,16 +321,6 @@ nav {
     left: 12%;
 }
 
-/* .Language ul{
-    display: inline-block;
-}
-
-.Language ul li{
-    list-style: none;
-    font-family: sans-serif;
-    display: flex;
-} */
-
 #n-buna {
   width: 250px;
 }
@@ -340,4 +329,4 @@ nav {
 #Member-container {
   display: flex;
   flex-direction: row;
-}
+} */
