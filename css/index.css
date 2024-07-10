@@ -82,10 +82,6 @@ main {
     width: 0;
 }
 
-nav {
-    padding-top: 30px;
-}
-
 .sidebar-list {
     padding: 0;
     margin: 0;
@@ -388,25 +384,6 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
     left: 0px;
 }
 
-.Language a{
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: black;
-    position: fixed;
-    bottom: 2%;
-    left: 12%;
-}
-
-/* .Language ul{
-    display: flex;
-}
-
-.Language ul li{
-    list-style: none;
-    font-family: sans-serif;
-} */
-
 #n-buna {
   width: 250px;
 }
@@ -419,12 +396,32 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
   display: flex;
   flex-direction: row;
 }
+
 #member-shoukai {
     margin-left: 190px;
     font-family: sans-serif;
     text-decoration: none;
     color: black;
 }
+
 #member-shoukai h1 {
     font-weight: normal;
 }
+
+.Songs-contents{
+    padding-left: 12%;
+    padding-top: 1%;
+}
+
+#Songs-img {
+    width: 1280px;
+}
+
+/* #member-shoukai ul li{
+    list-style: none;
+} */
+
+/* #member-shoukai a{
+    text-decoration: none;
+    color: black;
+} */

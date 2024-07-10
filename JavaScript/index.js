@@ -32,48 +32,19 @@ $(function() {
   $(window).on('load', function() {
     setTimeout(function() {
       show_load();
-    }, 800);
+    }, 200);
     setTimeout(function() {
       hide_load();
-    }, 1000);
+    }, 800);
     setTimeout(function() {
       show_txt();
-    }, 1500);
+    }, 1200);
     setTimeout(function() {
       end_loader();
     }, 2500);
   });
 });
 
-// $(function(){
-//   function end_loader() {
-//     $('#loader03').fadeOut(800);
-//   }
-//   function show_load() {
-//     $('#loader03 .looping-rhombuses-spinner').fadeIn(400);
-//   }
-//   function hide_load() {
-//     $('#loader03 .looping-rhombuses-spinner').fadeOut(400);
-//   }
-//   function show_txt() {
-//     $('#loader03 .txt').fadeIn(400);
-//   }
- 
-//   $(window).on('load', function () {
-//   setTimeout(function () {
-//     show_load();
-//   }, 800)
-//   setTimeout(function () {
-//     hide_load();
-//   }, 3500)
-//   setTimeout(function () {
-//     show_txt();
-//   }, 4000)
-//   setTimeout(function () {
-//     end_loader();
-//   }, 5000)
-//   })
-// })
 
 // const slideDown = function(el) {
 //  el.style.height = 'auto';
