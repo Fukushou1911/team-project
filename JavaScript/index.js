@@ -45,7 +45,6 @@ $(function() {
   });
 });
 
-
 // $(function(){
 //   function end_loader() {
 //     $('#loader03').fadeOut(800);
