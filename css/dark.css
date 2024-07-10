@@ -1,4 +1,4 @@
-#HOME-Night{
+.HOME{
     background: url(/images/night.jpg) center center / cover no-repeat fixed;
 }
 
@@ -316,27 +316,33 @@ main {
     width: 250px;
 }
 
-#Member-container {
+.MEMBER {
+    background-color: black;
+}
+
+.Member-container {
     display: flex;
     flex-direction: row;
 }
 
-#member-shoukai {
+.member-shoukai {
     padding-left: 12%;
     font-family: sans-serif;
     text-decoration: none;
-    background-color: black;
     color: #FFF;
 }
 
-#member-shoukai h1 {
+.member-shoukai h1 {
     font-weight: normal;
+}
+
+.SONGS {
+    background-color: black;
 }
 
 .Songs-contents{
     padding-left: 12%;
     padding-top: 1%;
-    background-color: black;
     color: #FFF;
 }
 

@@ -1,4 +1,4 @@
-#HOME{
+.HOME{
     background: url(/images/light.png) center center / cover no-repeat fixed;
 }
 
@@ -392,20 +392,27 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
     width: 250px;
 }
 
-#Member-container {
+.MEMBER {
+    font-family: sans-serif;
+}
+
+.Member-container {
   display: flex;
   flex-direction: row;
 }
 
-#member-shoukai {
-    margin-left: 190px;
-    font-family: sans-serif;
+.member-shoukai {
+    padding-left: 12%;
     text-decoration: none;
     color: black;
 }
 
-#member-shoukai h1 {
+.member-shoukai h1 {
     font-weight: normal;
+}
+
+.SONGS {
+    font-family: sans-serif;
 }
 
 .Songs-contents{
