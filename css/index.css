@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic");
 
 .HOME {
-  background: url(/images/light.png) center center / cover no-repeat fixed;
+  background: url("../images/light.png") center center / cover no-repeat fixed;
 }
 
 html {
