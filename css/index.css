@@ -382,11 +382,6 @@ footer > p:first-child {
   width: 250px;
 }
 
-.Member-container {
-  display: flex;
-  flex-direction: row;
-}
-
 .member-shoukai {
   padding-left: 12%;
   text-decoration: none;
