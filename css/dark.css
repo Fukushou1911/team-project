@@ -10,6 +10,7 @@ html {
     --color-menu:#3FCFE5;
     --color-font:#fff;
     --color-link: rgb(136, 187, 228);
+    --color-back: white;
 }
 
 /* <sidebar> */
@@ -117,7 +118,7 @@ main {
 }
 
 .sidebar-anchor {
-    color: #FFF;
+    color: var(--color-font);
     text-decoration: none;
     font-size: 1.8em;
     text-transform: uppercase;
@@ -132,7 +133,7 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #FFF;
+    background-color: var(--color-back);
     transition: all .7s ease-in-out;
 }
 
@@ -153,7 +154,7 @@ main {
 }
 
 .ua:hover .fa {
-    color: #FFF;
+    color: var(--color-font);
     transform: scale(1.3);
     transition: all 1s ease;
 }
@@ -242,7 +243,7 @@ main {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--color-back);
     overflow: hidden;
     position: absolute;
     left: -100%;
@@ -287,18 +288,18 @@ main {
     bottom: 0px;
     right: 0px;
     border-top: black;
-    color: white;
+    color: var(--color-font);
 }
 
 #news header{
     margin-left: 8%;
     font-size: 150%;
-    color: white;
+    color: var(--color-font);
 }
 
 #news a{
   text-decoration: none;
-  color: white;
+  color: var(--color-font);
 }
 
 #news li{
@@ -318,6 +319,7 @@ main {
 }
 
 footer {
+    color: var(--color-font);
     width: 100vw;
     height: min(100px, 20vmin);
     position: relative;
@@ -326,6 +328,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: gray solid 1px;
 }
 
 
@@ -363,7 +366,7 @@ footer > p:first-child {
 .member-shoukai {
     padding-left: 12%;
     text-decoration: none;
-    color: #FFF;
+    color: var(--color-font)
 }
 
 .member-shoukai h1 {
@@ -377,7 +380,7 @@ footer > p:first-child {
 .Songs-contents{
     padding-left: 12%;
     padding-top: 1%;
-    color: #FFF;
+    color: var(--color-font);
 }
 
 #Songs-img {
