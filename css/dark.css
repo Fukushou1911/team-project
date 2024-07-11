@@ -2,6 +2,16 @@
     background: url(/images/night.jpg) center center / cover no-repeat fixed;
 }
 
+html {
+    font-family: sans-serif
+}
+
+:root {
+    --color-menu:#3FCFE5;
+    --color-font:#fff;
+    --color-link: rgb(136, 187, 228);
+}
+
 /* <sidebar> */
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic');
 body, html {
@@ -25,7 +35,7 @@ main {
     top: 0;
     z-index: 1;
     left: -400px;
-    background-color: #3FCFE5;
+    background-color: var(--color-menu);
     transition: left .7s ease-in-out;
 }
 
@@ -37,7 +47,7 @@ main {
     display: block;
     height: 5px;
     width: 50px;
-    background-color: #3FCFE5;
+    background-color: var(--color-menu);
     margin: 10px auto;
 }
 
@@ -66,7 +76,7 @@ main {
 }
 
 .nav-right.visible-xs .active .bar {
-    background-color: #3FCFE5;
+    background-color: var(--color-menu);
     transition: all .7s ease;
 }
 
@@ -138,7 +148,7 @@ main {
 
 .fa {
     font-size: 1.4em;
-    color: #3FCFE5;
+    color: var(--color-menu);
     transition: all 1s ease;
 }
 
@@ -221,7 +231,6 @@ main {
     border: 2px solid rgb(165, 165, 165);
     color: rgb(165, 165, 165);
     text-decoration: none;
-    font-family: sans-serif;
     overflow: hidden;
     position: fixed;
     z-index: 1;
@@ -265,7 +274,7 @@ main {
 .loader .txt {
     font-size: 45px;
     font-weight: bold;
-    color: #3FCFE5;
+    color: var(--color-menu);
     display: none;
 }
 
@@ -308,6 +317,32 @@ main {
     left: 0px;
 }
 
+footer {
+    width: 100vw;
+    height: min(100px, 20vmin);
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer > p {
+    margin: 0;
+    font-size: min(12px, 2vmin);
+}
+
+footer > p > a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+footer > p:first-child {
+    font-weight: bold;
+}
+
 #n-buna {
     width: 250px;
 }
@@ -317,7 +352,7 @@ main {
 }
 
 .MEMBER {
-    background-color: black;
+    background-color: #0c5970;
 }
 
 .Member-container {
@@ -327,10 +362,8 @@ main {
 
 .member-shoukai {
     padding-left: 12%;
-    font-family: sans-serif;
     text-decoration: none;
     color: #FFF;
-    background-color: #0c5970;
 }
 
 .member-shoukai h1 {
