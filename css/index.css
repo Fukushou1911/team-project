@@ -2,7 +2,6 @@
     background: url(/images/light.png) center center / cover no-repeat fixed;
 }
 
-/* <sidebar> */
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic');
 body, html {
     height: 100%;
@@ -154,7 +153,17 @@ main {
     }
 }
 
-@media (min-width: 768px) {
+.nav-right {
+    position: absolute;
+}
+.hidden-xs {
+    display: block;
+}
+.visible-xs {
+    display: none;
+}
+
+/* @media (min-width: 768px) {
     .nav-right {
         position: absolute;
     }
@@ -164,7 +173,7 @@ main {
     .visible-xs {
         display: none;
     }
-}
+} */
 
 @media (max-width: 480px) {
     #container {
@@ -182,7 +191,35 @@ main {
       margin: 10px !important;
     }
   }
+
+  @media (max-width: 611px) {
+    .sidebar {
+        width: 150px;
+        left: -300px;
+    }
+    .sidebar-list {
+        margin-top: 150px;
+        font-size: 70%;
+    }
+    #news_header{
+        font-size: 110%;
+        margin-left: 10%;
+    }
+    .news li{
+        font-size: 90%;
+    }
+  }
   
+  @media (max-width: 554px) {
+    #news_header{
+        font-size: 100%;
+        margin-left: 10%;
+    }
+    .news li{
+        font-size: 80%;
+    }
+  }
+
   @media (max-width: 959px) {
     #container {
       margin: 0px !important;
@@ -197,6 +234,7 @@ main {
       flex-direction: column;
     }
   }
+
 /* .loader {
   position: fixed;
   width: 100%;
@@ -351,24 +389,24 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
     display: none;
 }
 
-#news{
+.news{
     position: absolute;
     bottom: 0px;
     right: 0px;
     border-top: black;
 }
 
-#news header{
+.news header{
     margin-left: 8%;
     font-size: 150%;
 }
 
-#news a{
+.news a{
   text-decoration: none;
   color: black;
 }
 
-#news li{
+.news li{
   list-style: none;
   border-top: solid gray;
 }
@@ -378,7 +416,7 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
 }
 
 #yorushika_icon{
-    width: 175px;
+    width: 150px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -421,14 +459,5 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
 }
 
 #Songs-img {
-    width: 1280px;
+    width: 1000px;
 }
-
-/* #member-shoukai ul li{
-    list-style: none;
-} */
-
-/* #member-shoukai a{
-    text-decoration: none;
-    color: black;
-} */
