@@ -271,7 +271,7 @@ main {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--color-menu);
   font-size: 45px;
   font-weight: bold;
   color: #3fcfe5;
@@ -288,7 +288,7 @@ main {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--color-menu);
   z-index: 555;
   top: 0;
   left: 0;
@@ -303,7 +303,7 @@ main {
 .txt {
   font-size: 45px;
   font-weight: bold;
-  color: #3fcfe5;
+  color: #fff;
 }
 
 @keyframes fadeInAnime {
@@ -314,6 +314,50 @@ main {
   to {
     opacity: 0;
   }
+}
+#page_top{
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: var(--color-menu);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: var(--color-menu);
 }
 
 .news {
@@ -363,7 +407,7 @@ footer {
 
 footer > p {
   margin: 0;
-  font-size: min(12px, 2vmin);
+  font-size: min(18px, 2vmin);
 }
 
 footer > p > a {
@@ -385,6 +429,7 @@ footer > p:first-child {
 
 .member-shoukai {
   padding-left: 12%;
+  font-size: 1.5vw;
   text-decoration: none;
   color: black;
 }
@@ -396,6 +441,7 @@ footer > p:first-child {
 .Songs-contents {
   padding-left: 12%;
   padding-top: 1%;
+  font-size: 1.5vw;
 }
 
 #Songs-img {
@@ -403,5 +449,8 @@ footer > p:first-child {
 }
 
 .block {
+  background-color: #d4f6fb;
   width: 1000px;
+  border: gray solid 1px;
+  padding-inline: 4%
 }
