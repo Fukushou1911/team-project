@@ -358,6 +358,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: gray solid 1px;
 }
 
 footer > p {
