@@ -358,11 +358,6 @@ footer > p:first-child {
     background-color: #0c5970;
 }
 
-.Member-container {
-    display: flex;
-    flex-direction: row;
-}
-
 .member-shoukai {
     padding-left: 12%;
     text-decoration: none;
