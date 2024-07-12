@@ -484,6 +484,7 @@ li {
   -webkit-transform: rotate(45deg) translateY(50%);
   transform: rotate(45deg) translateY(50%);
 }
+
 .prev {
   position: absolute;
   width: 15px;
@@ -508,6 +509,7 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 .indicator li {
   width: 14px;
   height: 14px;
@@ -517,9 +519,78 @@ li {
   border: 2px #000 solid;
   cursor: pointer;
 }
+
 .indicator li:first-of-type {
   background-color: #000;
 }
+
+/* ボタン全体の外枠指定 */
+.snsbtniti {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 350px;/* ボタンを設置する場所の最大横幅 */
+  margin: 0 auto;/* ボタンを中央へ */
+  }
+  
+  /* ulタグの内側余白なしと箇条書きの黒丸削除 */
+  ul.snsbtniti {
+  padding: 0!important;
+  list-style-type: none!important;
+  }
+  
+  /* ボタン同士の余白調整 */
+  .snsbtniti li {
+  flex: 0 0 25%; /* ボタン3つ並びへ */
+  text-align: center!important;
+  }
+  
+  /* ボタン全体 */
+  .flowbtn2 {
+  font-family: 'Noto Sans Japaneses', sans-serif; /* フォント指定 */
+  position: relative;
+  display: inline-block;
+  width: 75px;/* 背景横幅 */
+  height: 65px; /* 背景高さ */
+  font-size: 30px;
+  border-radius: 4px;
+  transition: .5s;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom:50px;/* ボタン下の余白 */
+  color: #fff;/* ボタン内カラー基本は白固定 */
+  background-color: #000;/* 背景カラー */
+  border: solid 1px;/* 枠線の指定 */
+  }
+  
+  /* アイコンの位置を少し下げる */
+  .flowbtn2 i {
+  position: relative;
+  top: 10px;
+  }
+  
+  /* ボタン内テキスト調整 */
+  .flowbtn2 div {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  }
+  
+  /* マウスホバー時、ボタン内を白に指定 */
+  .flowbtn2:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  color: #000;/* アイコンカラー */
+  border: solid 1px #000;/* 枠線カラー */
+  background-color: #fff;/* 背景カラー */
+  }
+  /* インスタのアイコンを少し大きく */
+  .flowbtn2 i.fa-brands.fa-instagram {
+  font-size: 35px;
+  }
+  
+  
 
 footer {
   width: 100vw;
