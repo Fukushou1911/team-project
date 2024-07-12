@@ -320,52 +320,52 @@ main {
 }
 
 #page_top{
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  opacity: 0.6;
-}
-
-#page_top a{
-  position: relative;
-  display: block;
-  width: 90px;
-  height: 90px;
-  text-decoration: none;
-}
-
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f102';
-  font-size: 25px;
-  color: var(--color-menu);
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -50px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-}
-
-#page_top a::after{
-  content: 'PAGE TOP';
-  font-size: 18px;
-  color: #fff;
-  position: absolute;
-  top: 45px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-  color: var(--color-menu);
-}
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+  
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+  }
+  
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: var(--color-menu);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: var(--color-menu);
+  }
 
 .news {
   position: absolute;
@@ -401,6 +401,204 @@ main {
   top: 0px;
   left: 0px;
 }
+
+.TopImage img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .Description {
+    color: var(--color-font);
+    text-align: center;
+    font-family: "Hiragino Maru Gothic ProN W4", serif;
+    font-size: 110%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  *,body,ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: auto;
+    }
+  
+  /* ↓ スライドの外枠 */
+  .slide-wrapper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  /*  ↓ スライド（コンテンツ） */
+  
+   /*スライド全体 */
+  .slide {
+    height: 100%;
+    display: flex;
+    transition: all 1s;
+  }
+  
+  /* スライド */
+  .slide div {
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .slide1 {
+    transform: translateX(0);
+  }
+  
+  .slide2 {
+    transform: translateX(-33.33%);
+  }
+  
+  .slide3 {
+    transform: translateX(-66.66%);
+  } */
+  
+  /* .slide div:nth-of-type(1){
+    background-color: #E1F3FC;
+  }
+  
+  .slide div:nth-of-type(2){
+    background-color: #FCE8F0;
+  }
+  
+  .slide div:nth-of-type(3){
+    background-color: #E3F1E4;
+  } */
+  
+  .next {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    -webkit-transform: rotate(45deg) translateY(50%);
+    transform: rotate(45deg) translateY(50%);
+  }
+  
+  .prev {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 25px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+  }
+  
+  .indicator {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    column-gap: 18px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .indicator li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    list-style: none;
+    background-color: #fff;
+    border: 2px #000 solid;
+    cursor: pointer;
+  }
+  
+  .indicator li:first-of-type {
+    background-color: #000;
+  }
+  
+  /* ボタン全体の外枠指定 */
+  .snsbtniti {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 350px;/* ボタンを設置する場所の最大横幅 */
+    margin: 0 auto;/* ボタンを中央へ */
+    }
+    
+    /* ulタグの内側余白なしと箇条書きの黒丸削除 */
+    ul.snsbtniti {
+    padding: 0!important;
+    list-style-type: none!important;
+    }
+    
+    /* ボタン同士の余白調整 */
+    .snsbtniti li {
+    flex: 0 0 25%; /* ボタン3つ並びへ */
+    text-align: center!important;
+    }
+    
+    /* ボタン全体 */
+    .flowbtn2 {
+    font-family: 'Noto Sans Japaneses', sans-serif; /* フォント指定 */
+    position: relative;
+    display: inline-block;
+    width: 75px;/* 背景横幅 */
+    height: 65px; /* 背景高さ */
+    font-size: 30px;
+    border-radius: 4px;
+    transition: .5s;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom:50px;/* ボタン下の余白 */
+    color: #fff;/* ボタン内カラー基本は白固定 */
+    background-color: #000;/* 背景カラー */
+    border: solid 1px;/* 枠線の指定 */
+    }
+    
+    /* アイコンの位置を少し下げる */
+    .flowbtn2 i {
+    position: relative;
+    top: 10px;
+    }
+    
+    /* ボタン内テキスト調整 */
+    .flowbtn2 div {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    }
+    
+    /* マウスホバー時、ボタン内を白に指定 */
+    .flowbtn2:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    color: #000;/* アイコンカラー */
+    border: solid 1px #000;/* 枠線カラー */
+    background-color: #fff;/* 背景カラー */
+    }
+    /* インスタのアイコンを少し大きく */
+    .flowbtn2 i.fa-brands.fa-instagram {
+    font-size: 35px;
+    }
 
 .ABOUT {
     background-color: black;
