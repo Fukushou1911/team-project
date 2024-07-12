@@ -645,6 +645,7 @@ footer > p:first-child {
 
 .member-shoukai {
   padding-left: 12%;
+  font-size: 1.5vw;
   text-decoration: none;
   color: var(--color-font);
 }
