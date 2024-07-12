@@ -1,427 +1,652 @@
-.HOME{
-    background: url(/images/light.png) center center / cover no-repeat fixed;
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic");
+
+.HOME {
+  background: url("../images/light.png") center center / cover no-repeat fixed;
 }
 
-/* <sidebar> */
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic');
-body, html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Arimo', sans-serif;
+html {
+  font-family: sans-serif;
+}
+
+:root {
+  --color-menu: #3fcfe5;
+  --color-link: rgb(136, 187, 228);
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Arimo", sans-serif;
 }
 
 main {
-    z-index: 2;
-    position: relative;
-    height: 100%;
-    transition: transform .7s ease-in-out;
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
 }
 
 .sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    left: -400px;
-    background-color: #3FCFE5;
-    transition: left .7s ease-in-out;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: -400px;
+  background-color: var(--color-menu);
+  transition: left 0.7s ease-in-out;
 }
 
 .sidebar.show {
-    left: 0;
+  left: 0;
 }
 
 .bar {
-    display: block;
-    height: 5px;
-    width: 50px;
-    background-color: #3FCFE5;
-    margin: 10px auto;
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: var(--color-menu);
+  margin: 10px auto;
 }
 
 .button {
-    cursor: pointer;
-    display: inline-block;
-    width: auto;
-    margin: 0 auto;
-    transition: all .7s ease;
-    position: fixed;
-    right: 3%;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  transition: all 0.7s ease;
+  position: fixed;
+  right: 3%;
 }
 
 .nav-right {
-    position: fixed;
-    right: 40px;
-    top: 20px;
+  position: fixed;
+  right: 40px;
+  top: 20px;
 }
 
 .hidden-xs {
-    display: none;
+  display: none;
 }
 
 .bar {
-    transition: all .7s ease;
+  transition: all 0.7s ease;
 }
 
 .nav-right.visible-xs .active .bar {
-    background-color: #3FCFE5;
-    transition: all .7s ease;
+  background-color: var(--color-menu);
+  transition: all 0.7s ease;
 }
 
 .button.active .top {
-    transform: translateY(15px) rotate(45deg);
+  transform: translateY(15px) rotate(45deg);
 }
 
 .button.active .bottom {
-    transform: translateY(-15px) rotate(-45deg);
+  transform: translateY(-15px) rotate(-45deg);
 }
 
 .button.active .middle {
-    width: 0;
+  width: 0;
 }
 
 .sidebar-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    margin-top: 150px;
-    text-align: center;
-    opacity: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  margin-top: 150px;
+  text-align: center;
+  opacity: 0;
 }
 
 .sidebar.show .sidebar-list {
-    opacity: 1;
-    transition: opacity .7s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
 }
 
 .sidebar-item {
-    margin: 30px 0;
-    transform: translateY(-20px);
+  margin: 30px 0;
+  transform: translateY(-20px);
 }
 
 .sidebar-item.active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .sidebar-anchor {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 7px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
 }
 
 .sidebar-anchor:before {
-    content: "";
-    width: 0;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #FFF;
-    transition: all .7s ease-in-out;
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all 0.7s ease-in-out;
 }
 
 .sidebar-anchor:hover:before {
-    width: 100%;
+  width: 100%;
 }
 
 .ua {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
 }
 
 .fa {
-    font-size: 1.4em;
-    color: #3FCFE5;
-    transition: all 1s ease;
+  font-size: 1.4em;
+  color: var(--color-menu);
+  transition: all 1s ease;
 }
 
 .ua:hover .fa {
-    color: #FFF;
-    transform: scale(1.3);
-    transition: all 1s ease;
+  color: #fff;
+  transform: scale(1.3);
+  transition: all 1s ease;
 }
 
 @media (min-width: 480px) {
-    .nav-list {
-        display: block;
-    }
+  .nav-list {
+    display: block;
+  }
 }
 
-@media (min-width: 768px) {
-    .nav-right {
-        position: absolute;
-    }
-    .hidden-xs {
-        display: block;
-    }
-    .visible-xs {
-        display: none;
-    }
+.nav-right {
+  position: absolute;
+}
+.hidden-xs {
+  display: block;
+}
+.visible-xs {
+  display: none;
 }
 
 @media (max-width: 480px) {
-    #container {
-      margin: 0px !important;
-    }
-    #first-section {
-      height: 40vh !important;
-    }
-    #first-section-img {
-      width: 100% !important;
-      margin: 10px !important;
-    }
-    #first-section-text {
-      width: 100% !important;
-      margin: 10px !important;
-    }
+  #container {
+    margin: 0px !important;
   }
-  
-  @media (max-width: 959px) {
-    #container {
-      margin: 0px !important;
-    }
-    .article-pic {
-      display: none !important;
-    }
+  #first-section {
+    height: 40vh !important;
   }
-  
-  @media (max-width: 960px) {
-    #latest-articles {
-      flex-direction: column;
-    }
+  #first-section-img {
+    width: 100% !important;
+    margin: 10px !important;
   }
-/* .loader {
+  #first-section-text {
+    width: 100% !important;
+    margin: 10px !important;
+  }
+}
+
+@media (max-width: 611px) {
+  .sidebar {
+    width: 150px;
+    left: -300px;
+  }
+  .sidebar-list {
+    margin-top: 150px;
+    font-size: 70%;
+  }
+  #news_header {
+    font-size: 110%;
+    margin-left: 10%;
+  }
+  .news li {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 554px) {
+  #news_header {
+    font-size: 100%;
+    margin-left: 10%;
+  }
+  .news li {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 959px) {
+  #container {
+    margin: 0px !important;
+  }
+  .article-pic {
+    display: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+  #latest-articles {
+    flex-direction: column;
+  }
+}
+
+.bg-extend-left {
+  padding: 15px;
+  border: 2px solid #333;
+  color: #333;
+  text-decoration: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-extend-left::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-menu);
+  overflow: hidden;
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.bg-extend-left:hover::before {
+  left: 0;
+}
+
+.button-text {
+  font-size: 20px;
+}
+
+.loader-first {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--color-menu);
+  font-size: 45px;
+  font-weight: bold;
+  color: #3fcfe5;
   z-index: 555;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.loader .txt {
-  font-size: 45px;
-  font-weight: bold;
-  color: rgb(30, 50, 93);
-  display: none;
-}
-
-.loader .looping-rhombuses-spinner{
-  display: none;
-} */
-
-/* -sidebar- */
-
-/* .include-accordion ul{
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    margin: 0;
-}
-
-.include-accordion ul li{
-    border-bottom: 1px dotted gray;
-    padding: 10px 0 10px 10px;
-    margin-left:15px;
-}
-
-button{
-  position: sticky;
-  border: none;
-  width: 100%;
-  background-color: inherit;
-  cursor: pointer;
-  text-align: left;
-  padding: 15px 0 15px 20px;
-  font-size:1em;
-}
-
-button:hover{
-  color: gray;
-}
-
-button::before,
-button::after{
-  content:"";
-  position: absolute;
-  top: 20px;
-  width: 1.5px;
-  height: 8px;
-  background-color: #fff;
-  transition: .5s;
-}
-
-button::before{
-  transform: rotate(-45deg);
-  right: 35px;
-}
-
-button::after{
-  transform: rotate(45deg);
-  right: 30px;
-}
-
-li.active button::before{
-  transform: rotate(-135deg);
-  transition:.5s;
-}
-
-li.active button::after{
-  transform: rotate(135deg);
-  transition:.5s;
-}
-
-ul.active{ overflow-y: auto; }
-
-ul:nth-of-type(1) li.active li:last-child{
-  border-bottom:1px solid #67a863; 
-} 
-
-ul:nth-of-type(2){ background-color: #357D87; }
-ul:nth-of-type(2) ul{ background-color: #519FA5; border-top: 1px solid #5D9FA8; }
-ul:nth-of-type(2) button:hover{ background-color: #1C4B56; }
-ul:nth-of-type(2) li li{ border-bottom: 1px dotted #73BEBF; }
-ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
-
-.bg-extend-left {
-    padding: 15px;
-    border: 2px solid #333;
-    color: #333;
-    text-decoration: none;
-    font-family: sans-serif;
-    overflow: hidden;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-}
-  
-.bg-extend-left::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #3FCFE5;
-    overflow: hidden;
-    position: absolute;
-    left: -100%;
-    bottom: 0;
-    transition: .4s;
-    z-index: -1;
-}
-  
-.bg-extend-left:hover::before {
-    left: 0;
-}
-
-.button-text{
-    font-size: 20px;
+  opacity: 1;
 }
 
 .loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 555;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loader .txt {
-    font-size: 45px;
-    font-weight: bold;
-    color: #3FCFE5;
-    display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-menu);
+  z-index: 555;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
-.loader .looping-rhombuses-spinner {
-    display: none;
+.txt {
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
 }
 
-#news{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    border-top: black;
+@keyframes fadeInAnime {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
-#news header{
-    margin-left: 8%;
-    font-size: 150%;
+#page_top{
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
 }
 
-#news a{
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: var(--color-menu);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -50px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: var(--color-menu);
+}
+
+.news {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-top: black;
+}
+
+.news header {
+  margin-left: 8%;
+  font-size: 150%;
+}
+
+.news a {
   text-decoration: none;
   color: black;
 }
 
-#news li{
+.news li {
   list-style: none;
   border-top: solid gray;
 }
 
-#hover-link:hover{
-    color: gray;
+#hover-link:hover {
+  color: gray;
 }
 
-#yorushika_icon{
-    width: 175px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+#yorushika_icon {
+  width: 150px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.TopImage img {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+.Description {
+  text-align: center;
+  font-family: "Hiragino Maru Gothic ProN W4", serif;
+  font-size: 110%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+*,body,ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.slide img{
+  width: 100%;
+  height: auto;
+  }
+
+/* ↓ スライドの外枠 */
+.slide-wrapper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+/*  ↓ スライド（コンテンツ） */
+
+ /*スライド全体 */
+.slide {
+  height: 100%;
+  display: flex;
+  transition: all 1s;
+}
+
+/* スライド */
+.slide div {
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .slide1 {
+  transform: translateX(0);
+}
+
+.slide2 {
+  transform: translateX(-33.33%);
+}
+
+.slide3 {
+  transform: translateX(-66.66%);
+} */
+
+/* .slide div:nth-of-type(1){
+  background-color: #E1F3FC;
+}
+
+.slide div:nth-of-type(2){
+  background-color: #FCE8F0;
+}
+
+.slide div:nth-of-type(3){
+  background-color: #E3F1E4;
+} */
+
+.next {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 10px;
+  bottom: 50%;
+  z-index: 10;
+  cursor: pointer;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  -webkit-transform: rotate(45deg) translateY(50%);
+  transform: rotate(45deg) translateY(50%);
+}
+
+.prev {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 25px;
+  bottom: 50%;
+  z-index: 10;
+  cursor: pointer;
+  border-top: solid 3px #000;
+  border-right: solid 3px #000;
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+.indicator {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  column-gap: 18px;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  list-style: none;
+  background-color: #fff;
+  border: 2px #000 solid;
+  cursor: pointer;
+}
+
+.indicator li:first-of-type {
+  background-color: #000;
+}
+
+/* ボタン全体の外枠指定 */
+.snsbtniti {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 350px;/* ボタンを設置する場所の最大横幅 */
+  margin: 0 auto;/* ボタンを中央へ */
+  }
+  
+  /* ulタグの内側余白なしと箇条書きの黒丸削除 */
+  ul.snsbtniti {
+  padding: 0!important;
+  list-style-type: none!important;
+  }
+  
+  /* ボタン同士の余白調整 */
+  .snsbtniti li {
+  flex: 0 0 25%; /* ボタン3つ並びへ */
+  text-align: center!important;
+  }
+  
+  /* ボタン全体 */
+  .flowbtn2 {
+  font-family: 'Noto Sans Japaneses', sans-serif; /* フォント指定 */
+  position: relative;
+  display: inline-block;
+  width: 75px;/* 背景横幅 */
+  height: 65px; /* 背景高さ */
+  font-size: 30px;
+  border-radius: 4px;
+  transition: .5s;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom:50px;/* ボタン下の余白 */
+  color: #000;/* アイコンカラー */
+  background-color: #fff;/* ここは白で固定 */
+  border: solid 1px;;/* 枠線の指定 */
+  }
+  
+  /* アイコンの位置を少し下げる */
+  .flowbtn2 i {
+  position: relative;
+  top: 10px;
+  }
+  
+  /* ボタン内テキスト調整 */
+  .flowbtn2 div {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  }
+  
+  /* マウスホバー時、ボタン内を白に指定 */
+  .flowbtn2:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  border: solid 1px #000;/* 枠線カラー */
+  background-color: #000;/* 背景カラー */
+  }
+  /* インスタのアイコンを少し大きく */
+  .flowbtn2 i.fa-brands.fa-instagram {
+  font-size: 35px;
+  }
+
+footer {
+  width: 100vw;
+  height: min(100px, 20vmin);
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: gray solid 1px;
+}
+
+footer > p {
+  margin: 0;
+  font-size: min(18px, 2vmin);
+}
+
+footer > p > a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+footer > p:first-child {
+  font-weight: bold;
 }
 
 #n-buna {
   width: 250px;
 }
 
-#suis{
-    width: 250px;
-}
-
-.MEMBER {
-    font-family: sans-serif;
-}
-
-.Member-container {
-  display: flex;
-  flex-direction: row;
+#suis {
+  width: 250px;
 }
 
 .member-shoukai {
-    padding-left: 12%;
-    text-decoration: none;
-    color: black;
+  padding-left: 12%;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
 }
 
 .member-shoukai h1 {
-    font-weight: normal;
+  font-weight: normal;
+  padding: 2% 0 2% 0;
 }
 
-.SONGS {
-    font-family: sans-serif;
-}
-
-.Songs-contents{
-    padding-left: 12%;
-    padding-top: 1%;
+.Songs-contents {
+  padding-left: 12%;
+  padding-top: 1%;
+  font-size: 1.5vw;
 }
 
 #Songs-img {
-    width: 1280px;
+  width: 1000px;
 }
 
 /* #member-shoukai ul li{
@@ -434,5 +659,10 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; } */
 } */
 
 #MEMBER {
-    background-color: #9ee8ff;
+    background-color: #9ee8ff;}
+.block {
+  background-color: #d4f6fb;
+  width: 1000px;
+  border: gray solid 1px;
+  padding: 2% 4% 2% 4%;
 }
