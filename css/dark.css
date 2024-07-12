@@ -652,6 +652,7 @@ footer > p:first-child {
 
 .member-shoukai h1 {
   font-weight: normal;
+  padding: 2% 0 2% 0;
 }
 
 .member-shoukai a {
@@ -665,6 +666,7 @@ footer > p:first-child {
 .Songs-contents {
   padding-left: 12%;
   padding-top: 1%;
+  font-size: 1.5vw;
   color: var(--color-font);
 }
 
@@ -673,8 +675,8 @@ footer > p:first-child {
 }
 
 .block {
-    background-color: rgb(28, 28, 28);
+  background-color: rgb(28, 28, 28);
   width: 1000px;
   border: gray solid 1px;
-  padding-inline: 4%
+  padding: 2% 4% 2% 4%;
 }
