@@ -411,15 +411,6 @@ main {
   padding-bottom: 5%;
 }
 
-*,body,ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 .slide img{
   width: 100%;
   height: auto;
