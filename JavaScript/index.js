@@ -63,15 +63,18 @@ slides.forEach((slide) => {
 });
 let count = 0;
 let autoPlayInterval;
+
 function updateSlidePosition() {
   slideContainer.style.transform = `translateX(-${count * slideWidth}%)`;
 }
+
 function updateIndicatorColors() {
   const lists = document.querySelectorAll('.list');
   lists.forEach((list, i) => {
     list.style.backgroundColor = i === count % totalSlides ? '#000' : '#fff';
   });
 }
+
 function nextClick() {
   count++;
   if (count >= totalSlides) {
@@ -80,6 +83,7 @@ function nextClick() {
   updateSlidePosition();
   updateIndicatorColors();
 }
+
 function prevClick() {
   count--;
   if (count < 0) {
@@ -88,27 +92,33 @@ function prevClick() {
   updateSlidePosition();
   updateIndicatorColors();
 }
+
 function startAutoPlay() {
   autoPlayInterval = setInterval(nextClick, 5000);
 }
+
 function resetAutoPlayInterval() {
   clearInterval(autoPlayInterval);
   startAutoPlay();
 }
+
 next.addEventListener('click', () => {
   nextClick();
   resetAutoPlayInterval();
 });
+
 prev.addEventListener('click', () => {
   prevClick();
   resetAutoPlayInterval();
 });
+
 indicator.addEventListener('click', (event) => {
   if (event.target.classList.contains('list')) {
     const index = Array.from(indicator.children).indexOf(event.target);
     setActiveSlide(index);
   }
 });
+
 function setActiveSlide(index) {
   count = index;
   updateSlidePosition();
